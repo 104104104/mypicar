@@ -234,11 +234,9 @@ toEditedPic.onclick = function() {
             ctxForToumei.drawImage(document.getElementById("tempcanvasimg"), 0, 0, videoPosition.width, videoPosition.height);
 
             //ここから、緑部分を透明にする部分
-            console.log('b');
             toToumeiData = ctxForToumei.getImageData(0, 0, videoPosition.width, videoPosition.height);
 
             //透過用のdataを作成
-            console.log('start');
             for (var i = 0; i < toToumeiData.data.length; i += 4) {
                 //一番緑が大きな値かつめっちゃ緑が大きい か 緑そこそこ大きくて他の色が極端に小さいを透明にする
                 if (((220 <= toToumeiData.data[i + 1]) && (toToumeiData.data[i] < toToumeiData.data[i + 1]) && (toToumeiData.data[i + 2] < toToumeiData.data[i + 1])) ||
@@ -250,7 +248,7 @@ toEditedPic.onclick = function() {
             ctxForToumei.putImageData(toToumeiData, 0, 0);
 
             var png = canvasForToumei.toDataURL();
-            document.getElementById("testimg").src = png;
+             //document.getElementById("testimg").src = png;
             
 
             //生成した画像を、写真撮影モードに渡す
@@ -272,7 +270,7 @@ toEditedPic.onclick = function() {
             form.submit();
             //post送信ここまで
 
-            //window.open('takeaphoto', '_self'); // 新しいタブを開き、ページを表示
+            //画面遷移は、railsのcontrollerのredirectで行う
         }
     }
 
