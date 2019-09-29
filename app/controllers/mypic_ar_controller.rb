@@ -16,12 +16,11 @@ class MypicArController < ApplicationController
     def create
         @img = Pictemp.new()
         @img.picture = params[:picture]
-        logger.debug "!!!!!!!!!!!!!!!!!!!!!"
-        logger.debug @img
-        logger.debug "!!!!!!!!!!!!!!!!!!!!!"
+        #logger.debug "!!!!!!!!!!!!!!!!!!!!!"
+        #logger.debug @img
+        #logger.debug "!!!!!!!!!!!!!!!!!!!!!"
         @img.save
         @number = @img.id
-        session[:temppicture] = params[:picture]
         redirect_to mypic_ar_takeaphoto_path(number: @number)
     end
 

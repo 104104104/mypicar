@@ -259,7 +259,8 @@ toEditedPic.onclick = function() {
             var request = document.createElement('input');
          
             form.method = 'POST';
-            form.action = 'http://localhost:3000/mypic_ar/create';
+            //form.action = 'http://localhost:3000/mypic_ar/create';
+            form.action = 'create';
          
             request.type = 'hidden'; //入力フォームが表示されないように
             request.name = 'picture';
