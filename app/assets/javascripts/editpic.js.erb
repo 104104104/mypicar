@@ -162,7 +162,7 @@ erace.onclick = function() {
 //全消去
 const deleteall = document.getElementById("deleteall");
 deleteall.onclick = function() {
-    if (!confirm('全ての選択範囲を消去しますか？')) return;
+    if (!confirm('全ての描画を消去しますか？')) return;
     ctx.globalCompositeOperation = 'destination-out';
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     //通常ペンに戻す
