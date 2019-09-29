@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag "editpic", :media => "all" %>
+
+<!--canvassotoに合わせてcanvasの大きさを変えると、なぜかジャギらない。理由はいまいち不明-->
+<div id="canvassoto">
+</div>
+<canvas id="canvas"></canvas>
+<canvas id="canvasForToumei"></canvas>
+<img src="test.jpeg" id="editimg">
+<img src="" id="tempcanvasimg">
+
+
+<div id="mybutton">
+    <div class="upload"><input type="file" name="file" id="file"></div>
+    <a id="toEditedPic">写真の撮影へ</a>
+</div>
+
+<div id="mybuttonTate">
+    <span id="smallpen">S</span>
+    <span id="mediumpen">M</span>
+    <span id="largepen">L</span>
+    <span id='erace'>erace</span>
+    <span id='deleteall'>delete all</span>
+</div>
+
+<img src="" id="testimg">
+
+<%= javascript_include_tag 'editpic.js' %>

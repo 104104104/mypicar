@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag "takeaphoto", :media => "all" %>
+
+<canvas id="canvas"></canvas>
+    <video id="video" autoplay playsinline></video>
+    <div id="mybutton">
+        <a href="" id="aImg" target="_blank">Take<br>A Photo</a>
+    </div>
+
+    <div class="slider">
+        <div class="slider-inside">
+            <input id="zoom-slider" type="range">
+        </div>
+    </div>
+
+    <!--jsでcontorollerからの変数を使いたいので、ここに一行書いちゃう-->
+    <script>var recieveImg = "<%= @onimg %>";</script>
+    
+    <%= javascript_include_tag 'takeaphoto.js' %>
