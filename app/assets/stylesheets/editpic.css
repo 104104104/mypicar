@@ -62,3 +62,9 @@ body {
 #toEditPic {
     cursor: pointer;
 }
+
+.editPicTools {
+    padding-top: 10%;
+    padding-left: 10%;
+    width: 80%;
+}
