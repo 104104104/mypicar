@@ -141,12 +141,12 @@ smallpen.onclick = function() {
     ctx.globalCompositeOperation = 'source-over';
 }
 mediumpen.onclick = function() {
-    ctx.lineWidth = 10;
+    ctx.lineWidth = 30;
     ctx.strokeStyle = "rgba(0, 255, 0, 1.0)";
     ctx.globalCompositeOperation = 'source-over';
 }
 largepen.onclick = function() {
-    ctx.lineWidth = 30;
+    ctx.lineWidth = 60;
     ctx.strokeStyle = "rgba(0, 255, 0, 1.0)";
     ctx.globalCompositeOperation = 'source-over';
 }
@@ -154,7 +154,7 @@ largepen.onclick = function() {
 //消しゴムモード
 const erace = document.getElementById("erace");
 erace.onclick = function() {
-    ctx.lineWidth = 60;
+    ctx.lineWidth = 10;
     ctx.strokeStyle = "rgba(255, 255, 255, 1.0)";
     ctx.globalCompositeOperation = 'destination-out';
 }
