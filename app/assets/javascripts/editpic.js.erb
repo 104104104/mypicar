@@ -65,7 +65,7 @@ function loadLocalImage(e) {
             img.src = uploadImgSrc;
             draw();
             //drawを走らせると、なぜかペンの色が変わるので、リセット
-            ctx.lineWidth = 10;
+            ctx.lineWidth = 30;
             ctx.strokeStyle = "rgba(0, 255, 0, 1.0)";
             ctx.globalCompositeOperation = 'source-over';
         }
@@ -93,7 +93,7 @@ var mouseX1;
 var mouseY1;
 
 //ペンの太さのデフォルト値
-ctx.lineWidth = 10;
+ctx.lineWidth = 30;
 //ペンのデフォルトの色は緑(透明にする部分を選択モード)
 ctx.strokeStyle = "rgba(0, 255, 0, 1.0)";
 
@@ -154,7 +154,7 @@ largepen.onclick = function() {
 //消しゴムモード
 const erace = document.getElementById("erace");
 erace.onclick = function() {
-    ctx.lineWidth = 10;
+    ctx.lineWidth = 60;
     ctx.strokeStyle = "rgba(255, 255, 255, 1.0)";
     ctx.globalCompositeOperation = 'destination-out';
 }
