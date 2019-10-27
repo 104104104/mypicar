@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 何をするアプリか
+- 風景の中にイラストを召喚して写真を撮れる、ブラウザ上で動くWebアプリです
+- Herokuを用いてここで公開しています:https://mypicar.herokuapp.com/mypic_ar/index
 
-Things you may want to cover:
+### 使っているツール
+rails
+- 画像をjavascriptからpost送信して、受け取る必要があったので(画面遷移するため)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+基本はjsで書いています。
